@@ -1,0 +1,321 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff5252;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 i {
+    color: #ff6b6b;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    color: #ecf0f1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Hero Section */
+.hero {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Seção de Discos */
+.destaques {
+    padding: 60px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin: 20px auto;
+}
+
+.destaques h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.grid-discos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.disco-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #eee;
+}
+
+.disco-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.disco-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Imagens específicas para cada disco */
+.disco-card:nth-child(1) img {
+    content: url('https://i.ytimg.com/vi/v4ftWvygAo0/maxresdefault.jpg');
+}
+
+.disco-card:nth-child(2) img {
+    content: url('https://akamai.sscdn.co/uploadfile/letras/albuns/8/4/2/4/612431729588555.jpg');
+}
+
+.disco-card:nth-child(3) img {
+    content: url('https://cdn-images.dzcdn.net/images/cover/155969d240ba80b43f5f4cd0b1977fdf/0x1900-000000-80-0-0.jpg');
+}
+
+.disco-card:nth-child(4) img {
+    content: url('https://cdn-images.dzcdn.net/images/cover/24fd0f9ac502eebf34603dd5e86ce3d7/500x500.jpg');
+}
+
+.disco-info {
+    padding: 15px;
+}
+
+.disco-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.disco-card p {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.disco-card .preco {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: block;
+}
+
+.disco-card button {
+    width: 100%;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.disco-card button:hover {
+    background: #ff6b6b;
+}
+
+/* Seção de Categorias */
+.categorias {
+    padding: 80px 0;
+    background: 
+        linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+        url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    margin: 40px 0;
+}
+
+.categorias h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.categoria-card {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.categoria-card:hover {
+    background: rgba(255, 107, 107, 0.8);
+    transform: translateY(-5px);
+}
+
+.categoria-card i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.categoria-card h3 {
+    font-size: 1.1rem;
+}
+
+/* Outras seções (mantidas do original) */
+.sobre {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+.contato {
+    padding: 60px 0;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 0 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+        background-attachment: scroll;
+    }
+    
+    .grid-discos {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .grid-discos {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-categorias {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .disco-card img {
+        height: 200px;
+    }
+}
