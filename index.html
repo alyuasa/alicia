@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlbumHouse - Sua Loja de Discos e Álbuns Gospel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-record-vinyl"></i> AlbumHouse   </h1>
+                <p>Discos & Álbuns Gospel</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#discos">Discos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#carrinho"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Encontre o disco perfeito para sua coleção</h2>
+            <p>Mais de 10.000 títulos em vinil, CD e álbum</p>
+            <a href="#discos" class="btn">Explorar Catálogo</a>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <div class="container">
+            <h2>Lançamentos e Destaques</h2>
+            <div class="grid-discos">
+                <div class="disco-card">
+                    <img src="https://i.ytimg.com/vi/v4ftWvygAo0/maxresdefault.jpg" alt="Capa do Álbum">
+                    <h3> Rodolfo Abrantes - R.A.B.T.</h3>
+                    <p>Gênero: Rock</p>
+                    <p>Ano: 2012</p>
+                    <p class="preco">R$ 89,90</p>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="disco-card">
+                    <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/8/4/2/4/612431729588555.jpg" alt="Capa do Álbum">
+                    <h3>Projeto Sola - 500</h3>
+                    <p>Gênero: Folk</p>
+                    <p>Ano: 2017
+                    </p>
+                    <p class="preco">R$ 129,90</p>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="disco-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/155969d240ba80b43f5f4cd0b1977fdf/0x1900-000000-80-0-0.jpg" alt="Capa do Álbum">
+                    <h3>Morada - Uma Só Voz (Vol. 1)</h3>
+                    <p>Gênero: Gospel</p>
+                    <p>Ano: 2021</p>
+                    <p class="preco">R$ 75,50</p>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="disco-card">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/24fd0f9ac502eebf34603dd5e86ce3d7/500x500.jpg" alt="Capa do Álbum">
+                    <h3>Salzband - Sonhar e Viver</h3>
+                    <p>Gênero: Rock Indie/Gospel</p>
+                    <p>Ano: 2017</p>
+                    <p class="preco">R$ 65,90</p>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categorias" id="discos">
+        <div class="container">
+            <h2>Navegue por Categorias</h2>
+            <div class="grid-categorias">
+                <div class="categoria-card">
+                    <i class="fas fa-guitar"></i>
+                    <h3>Rock</h3>
+                </div>
+                <div class="categoria-card">
+                    <i class="fas fa-music"></i>
+                    <h3>MPB</h3>
+                </div>
+                <div class="categoria-card">
+                    <i class="fas fa-headphones"></i>
+                    <h3>Eletrônica</h3>
+                </div>
+                <div class="categoria-card">
+                    <i class="fas fa-saxophone"></i>
+                    <h3>Jazz</h3>
+                </div>
+                <div class="categoria-card">
+                    <i class="fas fa-hip-hop"></i>
+                    <h3>Hip Hop</h3>
+                </div>
+                <div class="categoria-card">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Samba</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <h2>Sobre a AlbumHouse</h2>
+            <p>Desde 1995, a AlbumHouse é referência no mercado de discos para colecionadores. Nossa missão é conectar amantes da música com os melhores discos, sejam eles lançamentos recentes ou raridades vintage.</p>
+            <p>Nossa equipe é formada por especialistas em música que podem te ajudar a encontrar exatamente o que você procura ou sugerir novas adições para sua coleção.</p>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <textarea placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+            <div class="info-contato">
+                <p><i class="fas fa-map-marker-alt"></i> Rua da Música, 123 - São Paulo/SP</p>
+                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> contato@vinilhouse.com.br</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <h3>AlbumHouse</h3>
+                <p>Sua loja especializada em palbuns e discos de vinil e CD.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#discos">Discos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Album
+                House. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
